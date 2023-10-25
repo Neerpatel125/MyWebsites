@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+
+<html>
+	<head> 
+		<title>Neer's Website</title>
+		<style>
+
+			.header{
+				text-align: center;
+				font: serif;
+			}
+			body{
+				background-color: rgb(90, 0, 250);
+				overflow: hidden;
+			}
+
+			ul{
+				display: table;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 40px; 
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<h1 class = "header"> Made by: Neer!</h1> 
+		<ul> 
+			<label> Keys: </label> 
+			<li>Click = random values</li>
+			<li>Q = removing green</li>
+			<li>E = adding green</li>
+			<li>W = adding red</li>
+			<li>S = removing red</li>
+			<li>A = removing blue</li>
+			<li>D = adding blue</li>
+		</ul> 
+
+		<h1 id="Colors" class = "header">Current Color Values: red(90) green(0) blue (260)</h3>
+
+		
+		<script src = "script.js"></script>
+		
+		<!--
+		<script> 
+			var b = 260;
+			var r = 90;
+			var g = 0;
+
+			function onKey(key){
+				if (key.key == "d"){ 
+					if (b == 255){
+						return;
+					}
+					b = b + 5;
+					document.querySelector("body").style.backgroundColor = "rgb(" + (r) + "," + g + "," + (b) + ")";
+					document.querySelector("#Colors").innerHTML = "Current Color Values: red(" + r + ") " + "green(" + g +") " + "blue(" + b +")"; 
+				}
+				else if (key.key == "a"){ 
+					if (b == 0){
+						return;
+					}
+					b = b - 5;
+					document.querySelector("body").style.backgroundColor = "rgb(" + (r) + "," + g + "," + (b) + ")";
+					document.querySelector("#Colors").innerHTML = "Current Color Values: red(" + r + ") " + "green(" + g +") " + "blue(" + b +")"; 
+				}
+
+				else if (key.key == "w"){ 
+					if (r == 255){
+						return;
+					}
+					r = r + 5;
+					document.querySelector("body").style.backgroundColor = "rgb(" + (r) + "," + g + "," + (b) + ")";
+					document.querySelector("#Colors").innerHTML = "Current Color Values: red(" + r + ") " + "green(" + g +") " + "blue(" + b +")"; 
+				}
+
+				else if (key.key == "s"){ 
+					if (r == 0){
+						return;
+					}
+					r = r - 5;
+					document.querySelector("body").style.backgroundColor = "rgb(" + (r) + "," + g + "," + (b) + ")";
+					document.querySelector("#Colors").innerHTML = "Current Color Values: red(" + r + ") " + "green(" + g +") " + "blue(" + b +")"; 
+				}
+
+				else if (key.key == "e"){ 
+					if (g == 255){
+						return;
+					}
+					g = g + 5;
+					document.querySelector("body").style.backgroundColor = "rgb(" + (r) + "," + g + "," + (b) + ")";
+					document.querySelector("#Colors").innerHTML = "Current Color Values: red(" + r + ") " + "green(" + g +") " + "blue(" + b +")"; 
+				}
+				else if (key.key== "q"){
+					if (g == 0){
+						return;
+					}
+					g = g - 5;
+					document.querySelector("body").style.backgroundColor = "rgb(" + (r) + "," + g + "," + (b) + ")";
+					document.querySelector("#Colors").innerHTML = "Current Color Values: red(" + r + ") " + "green(" + g +") " + "blue(" + b +")"; 
+				}
+			}
+
+			function onClick(){
+				r = Math.floor(Math.random() * 200);
+				g = Math.floor(Math.random() * 200);
+				b = Math.floor(Math.random() * 200);
+				document.querySelector("body").style.backgroundColor = "rgb(" + (r) + "," + g + "," + (b) + ")";
+				document.querySelector("#Colors").innerHTML = "Current Color Values: red(" + r + ") " + "green(" + g +") " + "blue(" + b +")"; 
+			}
+
+
+			document.addEventListener("keydown", onKey);
+			document.addEventListener("mousedown", onClick)
+		</script>	
+		-->
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Neer's Canvas</title>
+		<style>
+
+			body{
+				background-color: black;
+				overflow: hidden;
+			}
+
+			.mid{
+				text-align: center;
+				width: 500px;
+				border: 1px dotted white;
+				padding-left: 4px; 
+				padding-right: 4px;
+				color: white;
+				position: absolute;
+				left: 50%;
+				margin-left: -250px ;
+				top: 5%; 
+				z-index: 1;
+				user-select: none; /* prevent the user from accidently highlighting the text */
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div class ="mid">
+			<h1>Drawing</h1>
+			<p">Click down and drag to draw. Press <strong>R</strong> to clear the canvas, <strong>H</strong> to hide/show extra text, <strong>D</strong> to draw with the cursor (default), and <strong>E</strong> to erase with the cursor. If you resize the window, the page will reload.</p>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
